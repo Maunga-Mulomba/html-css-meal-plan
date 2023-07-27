@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Plan</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,500&family=Playfair+Display:wght@400;500;600&family=Poppins:wght@200;300;400;500&family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Results for "Avocado"</h1>
+        <nav>
+          <p class="results">3 results found</p>
+
+          <div class="display">
+            <p>Choose display</p>
+            <div class="display__icons">
+              <i class="fa-solid fa-layer-group"></i>
+              <i class="fa-solid fa-grip grid"></i>
+            </div>
+          </div>
+        </nav>
+
+        <div class="filters">
+          <div class="filters__number">
+            <i class="fa-solid fa-filter"></i>
+            <p>Filters</p>
+            <div>3</div>
+          </div>
+
+          <div class="filters__selected">
+            <p>Vegetarian</p>
+            <i class="fa-regular fa-circle-xmark"></i>
+          </div>
+
+          <div class="filters__selected">
+            <p>Protein</p>
+            <i class="fa-regular fa-circle-xmark"></i>
+          </div>
+
+          <div class="filters__selected">
+            <p>Dinner</p>
+            <i class="fa-regular fa-circle-xmark"></i>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <!-- meal-1 -->
+        <div class="meal meal-1">
+          <div class="meal__image"></div>
+          <div class="meal__description">
+            <h2>Avocado sandwich with boiled egg</h2>
+            <div class="meal__description--time">
+              <i class="fa-regular fa-clock"></i>
+              <p>Under 1 hour</p>
+            </div>
+          </div>
+          <i class="fa-regular fa-bookmark"></i>
+        </div>
+
+        <!-- meal-2 -->
+        <div class="meal meal-2">
+          <div class="meal__image"></div>
+          <div class="meal__description">
+            <h2>Fresh avocado salad with broccoli</h2>
+            <div class="meal__description--time">
+              <i class="fa-regular fa-clock"></i>
+              <p>Under 1 hour</p>
+            </div>
+          </div>
+          <i class="fa-regular fa-bookmark"></i>
+        </div>
+
+        <!-- meal-3 -->
+        <div class="meal meal-3">
+          <div class="meal__image"></div>
+          <div class="meal__description">
+            <h2>Avocado and spinach pesto spagetti</h2>
+            <div class="meal__description--time">
+              <i class="fa-regular fa-clock"></i>
+              <p>Under 1 hour</p>
+            </div>
+          </div>
+          <i class="fa-regular fa-bookmark"></i>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

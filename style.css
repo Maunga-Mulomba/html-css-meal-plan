@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 3rem 0;
+  padding: 2rem 4rem;
+  background-color: white;
+  box-shadow: 0 5px 3px 0 rgba(217, 234, 254, 0.667);
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.results {
+  color: grey;
+  font-weight: 600;
+}
+
+.display {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.display i {
+  padding: 8px;
+}
+
+.display i:first-of-type {
+  background-color: #5b87f3;
+  color: white;
+}
+
+.display i:last-of-type {
+  background-color: #ece9ec;
+  margin-left: 0;
+  color: #676767;
+}
+
+.filters {
+  display: flex;
+  gap: 0.5rem;
+  margin: 2rem 0;
+}
+
+.filters > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.filters__number {
+  border: 1px solid #bbcaf0;
+}
+
+.filters__number > div {
+  width: 15px;
+  height: 15px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #5b87f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+}
+
+.filters__selected {
+  background-color: #5b87f3;
+  color: white;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.meal {
+  border: 1px solid #bbcaf0;
+  display: grid;
+  grid-template-columns: 0.5fr 0.8fr 30px;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 3px;
+}
+
+h2 {
+  font-size: 0.9rem;
+}
+
+.meal__image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+.meal-1 .meal__image {
+  background-image: url("https://images.pexels.com/photos/1410235/pexels-photo-1410235.jpeg?auto=compress&cs=tinysrgb&w=600");
+}
+
+.meal-2 .meal__image {
+  background-image: url("https://images.pexels.com/photos/3323687/pexels-photo-3323687.jpeg?auto=compress&cs=tinysrgb&w=600");
+}
+
+.meal-3 .meal__image {
+  background-image: url("https://images.pexels.com/photos/803963/pexels-photo-803963.jpeg?auto=compress&cs=tinysrgb&w=600");
+}
+
+.meal__description--time {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
